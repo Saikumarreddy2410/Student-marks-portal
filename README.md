@@ -7,12 +7,13 @@ To deploy this project run
   git clone "clone path"
 ```
 
-```bash
-  npm run install
-```
+
 route to Frontend
 ```bash
   cd frontEnd
+```
+```bash
+  npm run install
 ```
 To start Frontend
 ```bash
