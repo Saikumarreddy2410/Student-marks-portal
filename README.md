@@ -29,9 +29,6 @@ To start Backend Server
 ```
 
 
-## Demo
-
-
 
 ## Tech Stack 👇
 
