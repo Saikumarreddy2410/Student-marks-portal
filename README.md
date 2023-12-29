@@ -6,10 +6,6 @@ To deploy this project run
 ```bash
   git clone "clone path"
 ```
-Move to project Folder
-```bash
-  cd Student-marks-portal
-```
 
 route to Frontend
 ```bash
