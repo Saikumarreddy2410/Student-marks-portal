@@ -20,7 +20,7 @@ const Marks = () => {
 
   return (
     <div className="mx-60 relative">
-      <p className="text-center text-2xl font-semibold py-5">Marks Module</p>
+      <p className="text-2xl font-semibold py-4">Marks Module</p>
       <div className="flex justify-between relative">
         <input
           type="search"

@@ -47,7 +47,7 @@ const MarksTable = ({ searchText }) => {
       {data?.length === 0 ? (
         <p className="text-2xl text-center mt-44">Sorry, there is no data.</p>
       ) : (
-        <table className="w-full mt-5 border-separate border-spacing-y-3">
+        <table className="w-full mt-3 border-separate border-spacing-y-2">
           <thead>
             <tr>
               <th>StudentId</th>

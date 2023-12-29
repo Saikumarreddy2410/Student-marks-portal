@@ -19,7 +19,7 @@ const Student = () => {
 
   return (
     <div className="mx-60 relative">
-      <p className="text-2xl font-semibold py-5">Student Module</p>
+      <p className="text-2xl font-semibold py-4">Student Module</p>
       <div className="flex justify-between relative">
         <input
           type="search"
