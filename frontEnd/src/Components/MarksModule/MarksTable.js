@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
 import { toggleContext } from "../../App";
 
 const MarksTable = ({ searchText }) => {
-  const { modal, setModal } = useContext(toggleContext);
+  const { setModal } = useContext(toggleContext);
   const [data, setData] = useState([]);
 
   // toggle context is used open Modal whenever i click edit icon

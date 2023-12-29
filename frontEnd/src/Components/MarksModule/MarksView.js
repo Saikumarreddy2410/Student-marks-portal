@@ -22,7 +22,7 @@ const MarksView = () => {
         setMarksData(res.data[0]);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [marksid]);
   return (
     <div className="flex items-center justify-center fixed inset-0 bg-black bg-opacity-40 backdrop-blur-md transition-all duration-300 ease">
       <div className="bg-white w-[20rem] absolute rounded p-8 flex flex-col gap-5 capitalize">

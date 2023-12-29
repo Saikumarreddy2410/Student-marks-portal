@@ -11,7 +11,7 @@ import { toggleContext } from "../../App";
 
 const TeacherTable = ({ searchText }) => {
   const [data, setData] = useState();
-  const { modal, setModal } = useContext(toggleContext);
+  const { setModal } = useContext(toggleContext);
 
   // toggle context is used open Modal whenever i click edit icon
 

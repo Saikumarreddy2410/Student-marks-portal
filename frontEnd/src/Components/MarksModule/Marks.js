@@ -6,7 +6,7 @@ import { toggleContext } from "../../App";
 import MarksTable from "./MarksTable";
 
 const Marks = () => {
-  const { modal, setModal } = useContext(toggleContext);
+  const {  setModal } = useContext(toggleContext);
 
   const [searchText, setSearchText] = useState("");
 

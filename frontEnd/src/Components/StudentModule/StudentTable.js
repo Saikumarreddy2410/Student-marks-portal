@@ -14,7 +14,7 @@ const StudentTable = ({ searchText }) => {
 
   // toggle context is used open Modal whenever i click edit icon
 
-  const { modal, setModal } = useContext(toggleContext);
+  const { setModal } = useContext(toggleContext);
 
   const toggleModal = () => {
     setModal(true);

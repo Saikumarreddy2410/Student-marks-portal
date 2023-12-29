@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import TeacherTable from "./TeacherTable";
 
 const Teacher = () => {
-  const { modal, setModal } = useContext(toggleContext);
+  const { setModal } = useContext(toggleContext);
 
   const [searchText, setSearchText] = useState("");
 

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { toggleContext } from "../../App";
 
 const Student = () => {
-  const { modal, setModal } = useContext(toggleContext);
+  const { setModal } = useContext(toggleContext);
   const [searchText, setSearchText] = useState("");
 
   const toggleModal = () => {

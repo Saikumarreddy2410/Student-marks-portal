@@ -6,6 +6,8 @@ const FormControl = (props) => {
   switch (control) {
     case "input":
       return <Input {...rest} />;
+    default:
+      return null;
   }
 };
 
