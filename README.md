@@ -6,7 +6,10 @@ To deploy this project run
 ```bash
   git clone "clone path"
 ```
-
+Move to project Folder
+```bash
+  cd Student-marks-portal
+```
 
 route to Frontend
 ```bash
@@ -19,11 +22,16 @@ To start Frontend
 ```bash
   npm start
 ```
+
 Open another Teriminal for Backend Then route to server
 
 ```bash
   cd server
 ```
+```bash
+  npm run install
+```
+
 To start Backend Server
 ```bash
     npm start
