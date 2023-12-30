@@ -66,6 +66,7 @@ const CreateS = () => {
   });
 
   const onSubmit = (values, { resetForm }) => {
+    console.log(values);
     if (!studentid) {
       axios
         .post("http://localhost:8000/student/create", values)
@@ -74,7 +75,8 @@ const CreateS = () => {
           toast.error("Error:", error);
           console.error("Error:", error);
         });
-      toast.success("Yay! Student added Successfully!");
+      toast.success("Student added Successfully!");
+      navigate("/student");
     } else {
       axios
         .put(`http://localhost:8000/student/update/${studentid}`, values)
@@ -83,20 +85,19 @@ const CreateS = () => {
           toast.error("Error:", error);
           console.error("Error:", error);
         });
-      toast.success("Student update Successfully!");
+      let timeId = setTimeout(() => {
+        toast.success("Student update Successfully!");
+        navigate("/student");
+      }, 500);
+
+      return () => {
+        clearTimeout(timeId);
+      };
     }
 
     resetForm();
 
     // Reset form and Navigate to Teacher route
-
-    let timeId = setTimeout(() => {
-      navigate("/student");
-    }, 500);
-
-    return () => {
-      clearTimeout(timeId);
-    };
   };
 
   return (
@@ -136,8 +137,8 @@ const CreateS = () => {
                   name="studentclass"
                 />
 
-                <div className="flex justify-end gap-5 border-t pt-5">
-                  <button type="submit" className="border px-6 py-1 rounded">
+                <div className={`flex justify-end gap-5 border-t pt-5`}>
+                  <button type="submit" className={`border px-6 py-1 rounded`}>
                     {studentid ? "Update" : "Create"}
                   </button>
                   <button

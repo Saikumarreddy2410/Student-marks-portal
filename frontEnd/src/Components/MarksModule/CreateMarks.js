@@ -73,7 +73,7 @@ const CreateMarks = () => {
         .post("http://localhost:8002/marks/create", values)
         .then((response) => console.log(response.data))
         .catch((error) => console.error("Error:", error));
-      toast.success("Marks row created successfully!");
+      toast.success("Marks created successfully!");
     } else {
       axios
         .put(`http://localhost:8002/marks/update/${marksid}`, values)
@@ -82,7 +82,6 @@ const CreateMarks = () => {
           toast.error("Error:", error);
           console.error("Error:", error);
         });
-      toast.success("marks update Successfully!");
     }
 
     // Reset form and Navigate to Teacher route
@@ -90,6 +89,7 @@ const CreateMarks = () => {
     resetForm();
     let timeId = setTimeout(() => {
       navigate("/marks");
+      toast.success("marks update Successfully!");
     }, 100);
 
     return () => {
@@ -150,8 +150,8 @@ const CreateMarks = () => {
                   />
                   {marksid && (
                     <p className="absolute top-8 text-xs text-red-600 font-semibold">
-                      Note: Want to update other than Marks have to change the
-                      S and T tables
+                      Note: Want to update other than Marks have to change the S
+                      and T tables
                     </p>
                   )}
                 </div>

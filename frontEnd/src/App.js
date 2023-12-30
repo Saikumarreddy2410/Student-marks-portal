@@ -32,7 +32,11 @@ function App() {
       }}
     >
       <div className="App">
-        <ToastContainer position="bottom-left" />
+        <ToastContainer
+          position="top-right"
+          autoClose={500}
+          hideProgressBar={true}
+        />
         <Sidebar />
         <Outlet />
       </div>

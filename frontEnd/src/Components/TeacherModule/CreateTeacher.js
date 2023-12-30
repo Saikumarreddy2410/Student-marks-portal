@@ -63,7 +63,7 @@ const CreateTeacher = () => {
           toast.error("Error:", error);
           console.error("Error:", error);
         });
-      toast.success("Teacher row Created Successfully!");
+      toast.success("Teacher Created Successfully!");
     } else {
       axios
         .put(`http://localhost:8001/teacher/update/${teacherid}`, values)
@@ -72,7 +72,6 @@ const CreateTeacher = () => {
           toast.error("Error:", error);
           console.error("Error:", error);
         });
-      toast.success("Teacher update Successfully!");
     }
 
     // Reset form and Navigate to Teacher route
@@ -80,6 +79,7 @@ const CreateTeacher = () => {
     resetForm();
     let timeId = setTimeout(() => {
       navigate("/teacher");
+      toast.success("Teacher update Successfully!");
     }, 100);
 
     return () => {
