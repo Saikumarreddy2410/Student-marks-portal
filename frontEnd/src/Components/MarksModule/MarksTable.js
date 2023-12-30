@@ -47,7 +47,7 @@ const MarksTable = ({ searchText }) => {
       {data?.length === 0 ? (
         <p className="text-2xl text-center mt-44">Sorry, there is no data.</p>
       ) : (
-        <table className="w-full mt-3 border-separate border-spacing-y-2">
+        <table className="w-full mt-3 ">
           <thead>
             <tr>
               <th>StudentId</th>
@@ -93,7 +93,7 @@ const MarksTable = ({ searchText }) => {
                           <Link to={`/marks/view/${marksid}`}>
                             <MdOutlineRemoveRedEye
                               className="hover:bg-white text-violet-500 p-1 rounded-full cursor-pointer"
-                              size={25}
+                              size={28}
                             />
                           </Link>
 
@@ -101,14 +101,14 @@ const MarksTable = ({ searchText }) => {
                             <MdOutlineModeEditOutline
                               onClick={toggleModal}
                               className="hover:bg-white text-[#4895ef] p-1 rounded-full cursor-pointer"
-                              size={25}
+                              size={28}
                             />
                           </Link>
 
                           <MdDeleteOutline
                             onClick={() => deleteData(marksid)}
-                            className="hover:bg-white text-[#bf0603] p-1 rounded-full cursor-pointer"
-                            size={25}
+                            className="hover:bg-white text-[#e34b48] p-1 rounded-full cursor-pointer"
+                            size={28}
                           />
                         </div>
                       </td>

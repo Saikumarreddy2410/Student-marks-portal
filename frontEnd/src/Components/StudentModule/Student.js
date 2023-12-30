@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import { HiPlus } from "react-icons/hi";
 import StudentTable from "./StudentTable";
 import { Link } from "react-router-dom";
 import { toggleContext } from "../../App";
@@ -18,13 +17,13 @@ const Student = () => {
   };
 
   return (
-    <div className="mx-60 relative">
-      <p className="text-2xl font-semibold py-4">Student Module</p>
-      <div className="flex justify-between relative">
+    <div className="ml-52 relative py-8 px-12">
+      <p className="text-2xl font-semibold ">Student Module</p>
+      <div className="flex justify-between relative my-5">
         <input
           type="search"
           placeholder="Search Student"
-          className="border focus:outline-none w-96 p-1 pl-8 rounded"
+          className="border focus:outline-none w-72 p-1 pl-8 rounded"
           onChange={handleChange}
         />
         <div className="absolute flex items-center inset-y-0 left-0 pl-2">
@@ -35,9 +34,8 @@ const Student = () => {
             <button
               type="button"
               onClick={toggleModal}
-              className="border w-36 flex items-center py-1 font-medium justify-around rounded-2xl "
+              className="create-btn"
             >
-              <HiPlus size={25} />
               Add Student
             </button>
           </div>

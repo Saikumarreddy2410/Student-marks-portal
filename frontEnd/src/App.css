@@ -2,27 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-table thead tr th,
-td {
-  border: 1px solid #cbd5e1;
-  padding: 6px;
+.create-btn {
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 0;
+  width: 9rem;
+  border-radius: 1rem;
+  font-weight: 400;
+  background-color: #5468d5;
+  color: whitesmoke;
+}
+.create-btn:hover {
+  color: #5468d5;
+  background-color: whitesmoke;
+  
+}
+table {
+  border: 1px solid #e5e7eb;
+}
+table tr td {
+  padding: 10px;
 }
 
-table thead tr th {
-  color: #4895ef;
+table thead th {
+  color: #5468d5;
+  padding: 9px;
 }
 
 table tbody tr:hover {
-  background-color: #d1d5db;
+  background-color: #e5e7eb;
 }
 
 table td {
   text-transform: capitalize;
-  font-weight:500
+  font-weight: 500;
+  color: #64748b;
 }
 
+thead,
 tr:nth-of-type(even) {
-  background: #e5e7eb;
+  background: #f3f4f6;
 }
 
 form input {
@@ -37,4 +55,3 @@ form input {
 form input:focus {
   outline: none;
 }
-/* w-full p-2 rounded my-2 border border-gray-200 focus:outline-none */

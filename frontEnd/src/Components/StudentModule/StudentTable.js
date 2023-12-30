@@ -47,9 +47,9 @@ const StudentTable = ({ searchText }) => {
   return (
     <div>
       {data?.length === 0 ? (
-        <p className="text-2xl text-center mt-44">Sorry, there is no data.</p>
+        <p className="text-2xl text-center mt-44 ">Sorry, there is no data.</p>
       ) : (
-        <table className="w-full mt-3 border-separate border-spacing-y-2">
+        <table className="w-full ">
           <thead className="">
             <tr className="">
               <th>StudentId</th>
@@ -69,7 +69,7 @@ const StudentTable = ({ searchText }) => {
                 .map((item) => {
                   const { studentid, studentname, studentclass } = item;
                   return (
-                    <tr key={studentid} className="text-center ">
+                    <tr key={studentid} className="text-center">
                       <td>{studentid}</td>
                       <td>{studentname}</td>
                       <td>{studentclass} class</td>
@@ -78,22 +78,22 @@ const StudentTable = ({ searchText }) => {
                           <Link to={`/view/${studentid}`}>
                             <MdOutlineRemoveRedEye
                               className="hover:bg-white text-violet-500 p-1 rounded-full cursor-pointer"
-                              size={25}
+                              size={28}
                             />
                           </Link>
 
                           <Link to={`/update/${studentid}`}>
                             <MdOutlineModeEditOutline
                               onClick={toggleModal}
-                              className="hover:bg-white text-[#4895ef] p-1 rounded-full cursor-pointer"
-                              size={25}
+                              className="hover:bg-white text-[#388def] p-1 rounded-full cursor-pointer"
+                              size={28}
                             />
                           </Link>
 
                           <MdDeleteOutline
                             onClick={() => deleteData(studentid)}
-                            className="hover:bg-white text-[#bf0603] p-1 rounded-full cursor-pointer"
-                            size={25}
+                            className="hover:bg-white text-[#e34b48] p-1 rounded-full cursor-pointer"
+                            size={28}
                           />
                         </div>
                       </td>

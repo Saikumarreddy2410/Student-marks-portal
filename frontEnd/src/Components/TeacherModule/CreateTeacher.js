@@ -135,12 +135,12 @@ const CreateTeacher = () => {
                 />
 
                 <div className="flex justify-end gap-5 border-t pt-5">
-                  <button type="submit" className="border px-6 py-1 rounded">
+                  <button type="submit" className="create-btn">
                     {teacherid ? "Update" : "Create"}
                   </button>
                   <button
                     onClick={closeToggle}
-                    className="border px-6 py-1 rounded"
+                    className="border px-6 py-1 rounded-2xl hover:bg-[#e34b48] hover:text-white"
                   >
                     Cancel
                   </button>

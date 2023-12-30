@@ -16,7 +16,7 @@ const Sidebar = () => {
   return (
     <aside className="bg-gray-600">
       <button
-        className={`absolute top-5 left-4 cursor-pointer hover:bg-gray-300 p-3 bg-gray-400 rounded-full focus:outline-none ${
+        className={`fixed top-10 left-5 cursor-pointer hover:bg-gray-300 p-2 bg-gray-400 rounded-full focus:outline-none ${
           isOpen ? "hidden" : "visible"
         }`}
         onClick={toggleSidebar}
@@ -30,12 +30,12 @@ const Sidebar = () => {
       >
         <div className="flex justify-between items-center w-full py-3">
           <Link to="/">
-            <p className="p-2 text-xl font-bold text-white bg-[#4895ef] rounded-lg">
+            <p className="p-2 text-xl font-bold text-white bg-[#5468d5] rounded-lg">
               Logo
             </p>
           </Link>
           <button
-            className="hover:bg-gray-100 p-3 bg-gray-400 rounded-full focus:outline-none"
+            className="hover:bg-gray-100 p-2 bg-gray-400 rounded-full focus:outline-none"
             onClick={toggleSidebar}
           >
             <TfiClose size={20} />
